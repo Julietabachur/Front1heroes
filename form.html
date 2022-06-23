@@ -8,72 +8,66 @@
     <title>Formulario</title>
 </head>
 <body>
-    <div class="barDiscount">Descuentos 20%</div>
+    <div class="barDiscount">20% de descuento en todos los productos!</div>
     <header>        
         <div class="header2">
-            <span>Heroes</span>
+            <a href="index.html"><img src="img/logo.svg" alt="logo">Tienda Heroes</a>   
         </div>
     </header>
-    <div class="barDiscount">Descuentos 20%</div>
-    <main>
-
-        <form action="">
+    <nav class="NavBar">
+        <a href="">Contacto</a>
+        <a href="">Registrarme</a>
+        <a href="">Ingresar</a>
+    </nav>
+    <main class="mainForm">
+        <form action="POST">
             <h1>Añadí tu super!</h1>
-            <h2>Agregá tu personaje favorito completando las opciones.</h2>
-            <div class="">
-                <label>*Nombre
-                    <input type="text" name="nombre">
-                </label>
-                <label for="especie">*Especie
-                    <select name="especie" id="especie">
-                        <option value="Metahumano">Metahumano</option>
-                        <option value="mutante">mutante</option>
-                        <option value="alienígena">alienígena</option>
-                        <option value="Humano">Humano</option>
-                    </select>
-                </label>
-            </div>
+            <p>Agregá tu personaje favorito completando las opciones.</p>
             <div>
-                <label for="">Fecha
-                    <input type="date" name="" id="">
-                </label>
-                <label for="">Agregar foto</label>
-                <input type="file" name="" id="">
-            </div>
-            <div>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-                <div>
-                    <div>
-                        <label for="poderes">Poderes</label>
-                        <input type="checkbox" name="Volar" id="poderes" value="Volar">
-                        <label for="">Volar</label>                       
-                        <input type="checkbox" name="Superinteligencia" id="poderes" value="Superinteligencia">
-                        <label for="">Superinteligencia</label>
-                        <input type="checkbox" name="Vista de rayo láser" id="poderes" value="Vista de rayo láser">
-                        <label for="">Vista de rayo láser</label>
-                        <input type="checkbox" name="Billetera gorda" id="poderes" value="Billetera gorda">  
-                        <label for="">Billetera gorda</label>  
-                    </div>
-                    <hr>
-                    <div>
-                        <label for="tipo">Tipo de personaje</label>
-                        <input type="radio" name="Héroe / Heroina" id="tipo" value="Héroe / Heroina">
-                        <label for="">Héroe / Heroina</label>
-                        <input type="radio" name="Villano / Villana" id="tipo" value="Villano / Villana">
-                        <label for="">Villano / Villana</label>
-                    </div>
+                <div class="divs">
+                    <label>* Nombre
+                        <input type="text" name="nombre" class="inputs">
+                    </label>
+                    <label for="" >Fecha
+                        <input type="date" name="" id="" class="inputs">
+                    </label>
+                    <textarea name="" id="" cols="35" rows="14" placeholder="Descripcion"></textarea>
                 </div>
+                <div class="divs">
+                    <label for="especie">* Especie
+                        <select name="especie" id="especie" class="inputs">
+                            <option disabled selected>Especie</option>
+                            <option value="Metahumano">Metahumano</option>
+                            <option value="mutante">mutante</option>
+                            <option value="alienígena">alienígena</option>
+                            <option value="Humano">Humano</option>
+                        </select>
+                    </label>                    
+                    <label for="">Agregar foto
+                        <input type="file" name="" id="" class="agregarFoto">
+                    </label> 
+                    <div class="divOpciones">
+                        <div class="opciones">
+                            <label for="poderes">Poderes</label>                        
+                            <label for=""><input type="checkbox" name="Volar" id="poderes" value="Volar">Volar</label> 
+                            <label for=""><input type="checkbox" name="Superinteligencia" id="poderes" value="Superinteligencia">Superinteligencia</label>
+                            <label for=""><input type="checkbox" name="Vista de rayo láser" id="poderes" value="Vista de rayo láser">Vista de rayo láser</label>
+                            <label for=""><input type="checkbox" name="Billetera gorda" id="poderes" value="Billetera gorda">  Billetera gorda</label>  
+                        </div>
+                        <hr>
+                        <div class="opciones">
+                            <label for="tipo">Tipo de personaje</label>
+                            <label for=""><input type="radio" name="Héroe / Heroina" id="tipo" value="Héroe / Heroina">Héroe / Heroina</label>
+                            <label for=""><input type="radio" name="Villano / Villana" id="tipo" value="Villano / Villana">Villano / Villana</label>
+                        </div>
+                    </div>               
+                </div>                
             </div>
-            <input type="submit" value="Anadir">
+            <input type="submit" value="Añadir"  class="añadir">            
         </form>
-        
-           
     </main>
     <footer>
-        <div>
-            <p>Todos los derechos reservados a FRONT END 1</p>
-            <img src="img/github.png" alt="github">
-        </div>        
+        <p>Todos los derechos reservados a FRONT END 1</p>
     </footer>
 </body>
 </html>

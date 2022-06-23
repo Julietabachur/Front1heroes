@@ -1,14 +1,18 @@
 *{
     box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
-    background: #FFFFFF;
+    background-color: #FFFFFF;
 }
 
 .barDiscount{
     background-color: #1CD1B0; 
+    padding: 0.2rem;
+
 }
 
 .header2{
@@ -16,21 +20,49 @@ body{
     background: #00669F;
     box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
     height: 5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 
 }
 
-.header2 span{
+.header2 a{
     font-weight: 400;
     font-size: 40px;
     line-height: 47px;
     color: #000000;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.NavBar{
+    background-color: #000000;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.enlaces{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.NavBar a{
+    text-decoration: none;
+    color: #F3F3F3;
+    display: flex;
+    justify-content: space-around;
+    margin: 0.5rem;
 }
 
 .cards{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .corazon{
@@ -39,8 +71,35 @@ body{
     position: absolute;
     top: 10px;
     left: 10px;
+}
 
+.btnAgregar{
+    background-color: #00669F;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+}
 
+.btnAgregar{
+    color: white;
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+.btnAgregar:hover, button:hover {
+    background-color:white;
+    border: #00669F 0.2rem solid;
+    color: #00669F;
+}
+
+.mainForm{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
 }
 
 form{
@@ -51,33 +110,75 @@ form{
     align-items: center;
     flex-direction: column;
     color: white;
+    width: 54rem;
+    height: 45rem;
+}
+
+form>div{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 40rem;
+    height: 30rem;
+}
+
+hr{
+    color: white;
+}
+
+.inputs, .añadir{
+    width: 18.55rem;
+    height: 3rem;
+}
+
+form input, textarea, select, .agregarFoto{
+    border: 0.03rem solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+}
+
+.divs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem 0;
+
 }
 
 
+.opciones label{
+    display: flex;
+    flex-direction: row;
+    margin: 0.5rem;
+}
+
+.divOpciones{
+    display: flex;
+    flex-direction: column;
+    
+}
 
 
+.añadir{
+    background-color: #1CD1B0;
+    color: #000000;
+    font-size: 2rem;
+    font-weight: bold;
 
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+}
 
 footer{
     background: #00669F;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: white;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     padding: 1rem;
 }
-
-footer div{
-    display: flex;
-    justify-content: space-between;
-}
-
-
-footer img{
-    height: 2rem;
-    width: 7rem;
-}
-
 
 .fotoPerfil{
     border-radius: 50%;
@@ -88,16 +189,17 @@ footer img{
     
 p{
     font-size: 16px;
+    margin: 1rem 0;
 }
 
 .info{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 3rem;
+    justify-content: space-between;
+    margin-top: 5rem;
     padding: 0 1rem;
 } 
-
 
 button{
     border: none;
@@ -107,13 +209,12 @@ button{
     padding: 1rem 3rem;
 }
 
-
 .card{
     width: 300px;
     height: 529px;
     background: #F3F3F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin: 1rem;
+    margin: 1rem 0.25rem;
     position: relative;
     border-radius: 7px;
 }
@@ -126,12 +227,16 @@ button{
 
     main{
         display: flex;
+        align-items: center;
+        justify-content: center;
         margin: 1rem;
     }
+
     .cards{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        
     }
 
     footer div{
